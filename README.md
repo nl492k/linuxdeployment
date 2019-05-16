@@ -13,11 +13,11 @@
 
 #### Address:
 -Primary:
--http://18.191.202.184.xip.io/ ___(MUST USE TOP LEVEL DOMAIN TO SUPPORT GOOGLE LOGIN)___
+-http://3.15.31.49.xip.io/ ___(MUST USE TOP LEVEL DOMAIN TO SUPPORT GOOGLE LOGIN)___
 
 -Secondary:
--http://18.191.202.184
--http://ec2-18-191-202-184.us-east-2.compute.amazonaws.com
+-http://3.15.31.49
+-http://ec2-3-15-31-49.us-east-2.compute.amazonaws.com
 
 ___Facebook OAuth2.0 now only supports HTTPS___
 - Functionality is still part of the app, but will not work until migrated to HTTPS
