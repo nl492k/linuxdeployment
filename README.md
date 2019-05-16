@@ -214,10 +214,10 @@ git is already the newest version (1:2.7.4-0ubuntu1.6).
 +-- README.md
 +-- README.txt
 +-- static
-¦   +-- blank_user.gif
-¦   +-- client_platform.js
-¦   +-- styles.css
-¦   +-- top-banner.jpg
+Â¦Â Â  +-- blank_user.gif
+Â¦Â Â  +-- client_platform.js
+Â¦Â Â  +-- styles.css
+Â¦Â Â  +-- top-banner.jpg
 +-- templates
     +-- catalog.html
     +-- deletecategory.html
@@ -254,6 +254,13 @@ application.secret_key = '2286690089'
 
 #### 19| Restart Apache Service:
 ```sudo service apache2 restart```
+
+### References
+- https://www.tecmint.com/disable-root-login-in-linux/
+- https://github.com/eulerto/wal2json/issues/47
+- http://initd.org/psycopg/
+- https://knowledge.udacity.com/questions/5041
+- https://github.com/SDey96/Udacity-Linux-Server-Configuration-Project
 
 
 
