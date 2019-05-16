@@ -201,7 +201,7 @@ git is already the newest version (1:2.7.4-0ubuntu1.6).
 - ```cd /var/www/```
 - ```mkdir itemcatalog```
 
-#### 16| Clone GIT repository to ```itemcatalog``` directory: ```GIT CLONE https://github.com/nl492k/itemcatalog itemcategory```
+#### 16| Clone GIT repository to ```itemcatalog``` directory: ```GIT CLONE https://github.com/nl492k/itemcataloglinux itemcategory```
 - Verify:
 ```ubuntu@ip-172-26-14-216:/var/www/itemcatalog/itemcatalog$ tree
 +-- client_secrets.json
