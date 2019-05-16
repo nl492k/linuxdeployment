@@ -271,12 +271,17 @@ sudo nano /etc/apache2/sites-available/itemcatalog.conf
 </VirtualHost>
 ```
 
-#### 18| Remove Root Login:
-- Go to config file: ```nano /etc/ssh/sshd_config```
-- Change ```PermitRootLogin prohibit-password``` to ```PermitRootLogin no``` 
+#### 18| Start Virtual Host:
+-```sudo a2ensite itemcatalog```
 
 #### 19| Restart Apache Service:
 ```sudo service apache2 restart```
+
+#### 20| Remove Root Login:
+- Go to config file: ```nano /etc/ssh/sshd_config```
+- Change ```PermitRootLogin prohibit-password``` to ```PermitRootLogin no``` 
+
+
 
 
 ### References
