@@ -287,6 +287,7 @@ sudo nano /etc/apache2/sites-available/itemcatalog.conf
 - Update covert  ``result`` from by byte to string
 - Update ```createengine``` from ```sqlite://catalog.db``` to ```postgresql://catalog:catalog@localhost/catalog```
 - Update ```xrange(32)``` to ```range(32)```
+- Remove ```check_same_thread``` argument from ```createengine```
 
 #### 22| ```database_setup.py``` modifications:
 - Update  ```createengine``` from ```sqlite://catalog.db``` to ```postgresql://catalog:catalog@localhost/catalog```
