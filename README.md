@@ -291,6 +291,9 @@ sudo nano /etc/apache2/sites-available/itemcatalog.conf
 #### 22| ```database_setup.py``` modifications:
 - Update  ```createengine``` from ```sqlite://catalog.db``` to ```postgresql://catalog:catalog@localhost/catalog```
 
+#### 23| Restart Apache Service:
+```sudo service apache2 restart```
+
 
 
 
