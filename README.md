@@ -285,11 +285,11 @@ sudo nano /etc/apache2/sites-available/itemcatalog.conf
 - Update path of ```client_secrets.json``` to ```/var/www/itemcatalog/itemcatalog/client_secrets.json```
 - Update path of ```fb_client_secrets.json``` to ```/var/www/itemcatalog/itemcatalog/fb_client_secrets.json```
 - Update covert  ``result`` from by byte to string
-- Update database ```createengine``` from ```sqlite://catalog.db``` to ```postgresql://catalog:catalog@localhost/catalog```
+- Update ```createengine``` from ```sqlite://catalog.db``` to ```postgresql://catalog:catalog@localhost/catalog```
 - Update ```xrange(32)``` to ```range(32)```
 
 #### 22| ```database_setup.py``` modifications:
-- Update database ```createengine``` from ```sqlite://catalog.db``` to ```postgresql://catalog:catalog@localhost/catalog```
+- Update  ```createengine``` from ```sqlite://catalog.db``` to ```postgresql://catalog:catalog@localhost/catalog```
 
 
 
