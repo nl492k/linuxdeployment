@@ -248,12 +248,36 @@ application.secret_key = '2286690089'
 
 ```
 
+#### 17| Create Apache Config File for App:
+```
+sudo nano /etc/apache2/sites-available/itemcatalog.conf
+```
+```
+<VirtualHost *:80>
+   ServerName 3.15.31.49
+   ServerAlias 3.15.31.49.xip.io
+   ServerAdmin nl492k@att.com
+   WSGIScriptAlias / /var/www/itemcatalog/itemcatalog/itemcatalog.wsgi
+   <Directory /var/www/itemcatalog/itemcatalog/>
+       Require all granted
+   </Directory>
+   Alias /static /var/www/itemcatalog/itemcatalog/static
+   <Directory /var/www/itemcatalog/itemcatalog/static/>
+       Require all granted
+   </Directory>
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   LogLevel warn
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
 #### 18| Remove Root Login:
 - Go to config file: ```nano /etc/ssh/sshd_config```
 - Change ```PermitRootLogin prohibit-password``` to ```PermitRootLogin no``` 
 
 #### 19| Restart Apache Service:
 ```sudo service apache2 restart```
+
 
 ### References
 - https://www.tecmint.com/disable-root-login-in-linux/
