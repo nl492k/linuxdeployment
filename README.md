@@ -96,8 +96,39 @@ Add the following setting in Lightsail firewall con
 - Create ```grader``` user: ```sudo adduser grader```
 - Give ```grader``` superuser permissions: ```sudo visudo```
 - Add the following line below ```root``` user: ```grader  ALL=(ALL:ALL) ALL```
-#### 8|Create Private Key for ```grader```
-- In Amazon Lightsail, create a new key for ```grader``` copy to local machine to provide include in submission.
+#### 8|Create Private/Public Key for ```grader```
+- Using ssh-keygen, create a new key for ```grader``` copy privatekey to local machine to provide include in submission.
+- Create ```.ssh``` directory in ```/home/grader/```
+- Create ```authorized_keys``` file in ```.ssh```.
+- Change owner of ```/home/grader/.ssh/``` to ```grader```
+- Change ```grader``` privileges to ```.ssh``` to 700
+- Change ```grader``` privileges to ```.ssh/authorized_keys``` to 644
+- Add public key to ```/home/grader/.ssh/authorized_keys```
+- Test ```grader``` ssh:
+
+```
+$   ssh -i ~/.ssh/udacitykey -p2200 grader@3.15.31.49
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1083-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Thu May 16 07:52:25 2019 from 108.203.107.38
+grader@ip-172-26-0-189:~$
+```
+
+
 
 ## Prepare Server to Deploy App
 #### 9|Configure Timezone:
